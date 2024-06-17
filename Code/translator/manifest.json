@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Lingua Master",
+  "version": "5.0",
+  "description": "Translate text on-the-fly using Lingua Master",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "128": "id.png"
+    }
+  },
+  "permissions": ["activeTab", "storage","contextMenus"],
+  "icons": {
+    "128": "id.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

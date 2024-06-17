@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lingua Master</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons" style="color: #526d82;">
+            <abbr title="Copy"><i class="fas fa-copy" style="color: #fff;"></i></abbr>
+          </div>
+          <p style="color: #fff;">English</p>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt" style="color: #fff;"></i></li>
+        <li class="row to">
+          <p style="color: #fff;">हिन्दी</p>
+          <div class="icons">
+            <abbr title="कॉपी"><i class="fas fa-copy" style="color: #fff;"></i></abbr>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button type="submit">Translate Text</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
